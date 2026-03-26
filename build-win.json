@@ -1,0 +1,10 @@
+{
+  "appId": "com.vibecoding.floattodo",
+  "productName": "FloatTodo",
+  "directories": {
+    "output": "dist/win"
+  },
+  "win": {
+    "target": "nsis"
+  }
+}

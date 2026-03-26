@@ -1,0 +1,11 @@
+{
+  "appId": "com.vibecoding.floattodo",
+  "productName": "FloatTodo",
+  "directories": {
+    "output": "dist/mac"
+  },
+  "mac": {
+    "category": "public.app-category.productivity",
+    "target": "dmg"
+  }
+}
