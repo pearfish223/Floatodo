@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "build:mac": "electron-builder --mac --config build/mac.json",
-    "build:win": "electron-builder --win --config build/win.json",
+    "build:win": "electron-builder --win --x64 --config build/win.json",
     "build:all": "npm run build:mac && npm run build:win"
   },
   "devDependencies": {
