@@ -2,11 +2,11 @@
   "name": "float-todo",
   "version": "1.0.0",
   "description": "A floating desktop todo list for Mac & Windows",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "build:mac": "electron-builder --mac --config build-mac.json",
-    "build:win": "electron-builder --win --config build-win.json",
+    "build:mac": "electron-builder --mac --config build/mac.json",
+    "build:win": "electron-builder --win --config build/win.json",
     "build:all": "npm run build:mac && npm run build:win"
   },
   "devDependencies": {

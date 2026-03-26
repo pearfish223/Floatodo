@@ -39,7 +39,7 @@ function createWindow() {
     }
   })
 
-  mainWindow.loadFile('index.html')
+  mainWindow.loadFile(path.join(__dirname, 'index.html'))
 
   // 记住窗口位置
   const Store = require('./store')
@@ -127,7 +127,7 @@ ipcMain.on('minimize-to-bubble', () => {
       preload: path.join(__dirname, 'bubble-preload.js')
     }
   })
-  bubbleWindow.loadFile('bubble.html')
+  bubbleWindow.loadFile(path.join(__dirname, 'bubble.html'))
   bubbleWindow.on('closed', () => { bubbleWindow = null })
   mainWindow.hide()
 })
