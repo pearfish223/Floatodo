@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>FloatTodo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="titlebar" id="titlebar">
+    <div class="titlebar-left">
+      <span class="app-title">Floatodo</span>
+    </div>
+    <div class="titlebar-buttons">
+      <button class="btn-bubble" id="btnBubble" title="缩成悬浮球">●</button>
+      <button class="btn-pin active" id="btnPin" title="固定置顶">▲</button>
+      <button class="btn-min" id="btnMin" title="最小化">—</button>
+      <button class="btn-close" id="btnClose" title="隐藏">✕</button>
+    </div>
+  </div>
+
+  <div class="input-area">
+    <input type="text" id="todoInput" placeholder="添加新任务… (Enter)" maxlength="80" />
+    <button class="icon-btn" id="optUrgent" title="标记紧急">🚨</button>
+    <label class="icon-btn" id="optDeadlineLabel" title="设置截止日期">
+      📅
+      <input type="date" id="deadlineInput" />
+    </label>
+  </div>
+
+  <ul id="todoList"></ul>
+
+  <div class="footer">
+    <span id="statusText"></span>
+    <button id="clearDone">清除完成</button>
+  </div>
+
+
+  <script src="renderer.js"></script>
+</body>
+</html>
